@@ -15,7 +15,7 @@ void UMyAIBlueprintHelperLibrary::MySimpleMoveToLocation2(AController* Controlle
 	FTimerManager& timerManager = Controller->GetWorld()->GetTimerManager();
 
 	FTimerHandle timerHandle;
-	timerManager.SetTimer(timerHandle, [=]() { UAIBlueprintHelperLibrary::SimpleMoveToLocation(Controller, Goal); }, 1.5f, true);
+	timerManager.SetTimer(timerHandle, [=]() { UAIBlueprintHelperLibrary::SimpleMoveToLocation(Controller, Goal); }, 1.5f, true, 0.0f);
 
 	FTimerHandle timerHandle1;
 	timerManager.SetTimer(timerHandle1, [=]() { Controller->StopMovement(); }, 1.5f, true, 1.0f);
@@ -26,7 +26,7 @@ void UMyAIBlueprintHelperLibrary::MySimpleMoveToLocation3(AController* Controlle
 	FTimerManager& timerManager = Controller->GetWorld()->GetTimerManager();
 
 	FTimerHandle timerHandle;
-	timerManager.SetTimer(timerHandle, [=]() { UAIBlueprintHelperLibrary::SimpleMoveToLocation(Controller, Goal); }, 1.5f, true);
+	timerManager.SetTimer(timerHandle, [=]() { UAIBlueprintHelperLibrary::SimpleMoveToLocation(Controller, Goal); }, 1.5f, true, 0.0f);
 
 	FTimerHandle timerHandle1;
 	timerManager.SetTimer(timerHandle1, [=]() { UAIBlueprintHelperLibrary::SimpleMoveToLocation(Controller, Goal1); }, 1.5f, true, 1.0f);
